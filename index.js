@@ -28,6 +28,12 @@ app.use( express.json())
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/events', require('./routes/calendarEvents'))
 
+//Comodin para corregir error en 'Cannot get route auth/login'
+app.get('*', (req, res) => {
+    res.sendFile( __dirname + '/public/index.html' )
+
+})
+
 
 //TODO: CRUD: Eventos (delete, put, get, post, etc...)
 
