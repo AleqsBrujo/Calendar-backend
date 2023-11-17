@@ -1,4 +1,5 @@
 //Configuramos Express
+//NOTA IMPORTANTE EL SERVIDOR ESTA CORRIENDO DESDE RENDER.COM
 const cors = require('cors')
 const express = require('express')
 
